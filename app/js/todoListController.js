@@ -16,22 +16,11 @@ manageList.controller('todoListController', function($scope) {
     var count = 0;
     angular.forEach($scope.itemsList, function(item) {
         count += item.completed ? 0 : 1;
-      });
+    });
     return count;
   };
 
   $scope.removeItem = function(item){
     $scope.itemsList.splice($scope.itemsList.indexOf(item),1);
   };
-
-
-
-
-
-
- 
 });
-
-
-
-
